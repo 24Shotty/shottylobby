@@ -1,0 +1,11 @@
+ShottyLobby\listeners\MenuListener.class
+ShottyLobby\utils\SpawnManager.class
+ShottyLobby\listeners\JoinActionsListener.class
+ShottyLobby\Shottylobby.class
+ShottyLobby\listeners\WorldProtectionListener.class
+ShottyLobby\utils\AnnouncementManager$1.class
+ShottyLobby\utils\MenuManager.class
+ShottyLobby\listeners\PlayerProtectionListener.class
+ShottyLobby\listeners\InventoryListener.class
+ShottyLobby\utils\InventoryManager.class
+ShottyLobby\utils\AnnouncementManager.class

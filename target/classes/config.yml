@@ -1,0 +1,149 @@
+# Placeholders disponibili nei messaggi:
+# %player_name% - Nome del giocatore
+# %player_displayname% - Display name del giocatore
+# %player_uuid% - UUID del giocatore
+# %online_players% - Numero di giocatori online
+# %max_players% - Numero massimo di giocatori
+
+# Funzioni disponibili: (Importante, le funzioni sono native del plugin e puoi utilizzarle dove ti pare per qualsiasi Item tu crei per l'inventario)
+# [MESSAGE] <testo> - Invia un messaggio al player
+# [HIDEPLAYERS] - Nasconde/mostra i player 
+# [PARKOUR] - Teleporta o esegue comandi
+# [OPENMENU] - Apre una GUI configurabile
+# [SOCIAL] - Mostra i messaggi social 
+
+join-gamemode: ADVENTURE
+
+# Allora in caso tu non lo sappia yaw sarebbe la direzione in cui sta guardando il giocatore (nord, sud, est, ovest) il pitch la rotazione verticale della testa del player
+spawnpoint:
+  enable: true
+  world: world
+  x: 0.0
+  y: 64.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+
+void-teleport-height: 0
+
+# Da qui puoi settare quello che farà dopo il click sull'item del Parkour come puoi vedere puoi teleportarti oppure eseguire un comando se magari hai un plugin gia pronto che ti fa andare al Parkour
+parkour:
+  mode: TELEPORT # Nota qui se metti COMMAND passerai alla modalità del comando e puoi utilizzare il comando che inserisci nel parametro command
+  teleport:
+    world: world
+    x: 0.0
+    y: 100.0
+    z: 0.0
+    yaw: 0.0
+    pitch: 0.0
+  command: 'spawn'
+
+social-messages:
+  - '&6| &fDiscord &8» ds.example.it'
+  - '&6| &fStore &8» store.example.it'
+  - '&6| &fSito Web &8» www.example.it'
+
+custom-items:
+  enable: true
+  items:
+    social:
+      material: BOOK
+      amount: 1
+      slot: 1
+      name: '&f&l• &6&lSOCIAL &f&l•'
+      lore:
+        - ''
+        - '&6| &fEsplora i nostri social e seguici!'
+        - ''
+        - '&aClicca col tasto destro per aprire il menu'
+      actions:
+        - '[SOCIAL]'
+    navigator:
+      material: NETHER_STAR
+      amount: 1
+      slot: 4
+      name: '&f&l• &6&lNAVIGATORE &f&l•'
+      lore:
+        - ''
+        - '&6| &fEsplora le nostre modalita e divertiti!'
+        - ''
+        - '&aClicca col tasto destro per aprire il menu'
+      actions:
+        - '[OPENMENU] navigator'
+    music:
+      material: JUKEBOX
+      amount: 1
+      slot: 0
+      name: '&f&l• &6&lMUSICA &f&l•'
+      lore:
+        - ''
+        - '&6| &fAscolta la musica!'
+        - ''
+        - '&aClicca col tasto destro per aprire il menu'
+      actions:
+        - '[COMMAND] jukebox' # Yo ricoardati di scaricare il plugin esterno JukeBox altrimenti non funziona
+    parkour:
+      material: LADDER
+      amount: 1
+      slot: 8
+      name: '&f&l• &6&lPARKOUR &f&l•'
+      lore:
+        - ''
+        - '&6| &fGioca nel parkour!'
+        - ''
+        - '&aClicca col tasto destro per iniziare'
+      actions:
+        - '[PARKOUR]'
+        - '[MESSAGE] &6&lPARKOUR &8• &aIniziato! Salta sui blocchi!'
+    player_hider:
+      material: LIME_DYE
+      material-hidden: GRAY_DYE
+      amount: 1
+      slot: 7
+      name: '&f&l• &a&lMOSTRA GIOCATORI &f&l•'
+      name-hidden: '&f&l• &c&lNASCONDI GIOCATORI &f&l•'
+      lore:
+        - ''
+        - '&6| &fClicca per nascondere/mostrare i player'
+        - ''
+      actions:
+        - '[HIDEPLAYERS]'
+
+join-actions:
+  - '[MESSAGE] &8&l&m---------------------------------------'
+  - '[MESSAGE] '
+  - '[MESSAGE] &6&lEXAMPLE NETWORK'
+  - '[MESSAGE] '
+  - '[MESSAGE] &6| &fBenvenuto/a &6%player_name%'
+  - '[MESSAGE] '
+  - '[MESSAGE] &6| &fDiscord &8» &6ds.example.it'
+  - '[MESSAGE] &6| &fStore &8» &6store.example.it'
+  - '[MESSAGE] &6| &fSito Web &8» &6www.example.it'
+  - '[MESSAGE] '
+  - '[MESSAGE] &7 • 24Shotty Development Team'
+  - '[MESSAGE] '
+  - '[MESSAGE] &8&m&l---------------------------------------'
+
+item-click-gamemodes: # Qui scegli in quali modalità si può interagire con gli items dell' Inventario
+  - ADVENTURE
+  - CREATIVE
+  - SURVIVAL
+
+menus: # Qui puoi configurare la GUI del Server Selector
+  navigator:
+    title: '&6&lNavigatore'
+    size: 9
+    items:
+      survival:
+        slot: 4
+        material: GRASS_BLOCK
+        amount: 1
+        name: '&a&lSurvival'
+        lore:
+          - ''
+          - '&7Modalita survival classica'
+          - ''
+          - '&eClick per entrare!'
+        command: 'queue survival' # Qui invece scaricati queue per farlo funzionare
+
+# TUTTI QUESTI SONO I CONFIG DI BASE DEL PLUGIN

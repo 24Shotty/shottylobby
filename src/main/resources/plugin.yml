@@ -1,0 +1,6 @@
+name: shottylobby
+version: '1.0'
+main: ShottyLobby.Shottylobby
+api-version: '1.20'
+authors: [ 24Shotty ]
+description: Plugin per le lobby

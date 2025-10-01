@@ -122,7 +122,7 @@ item-click-gamemodes:
 
 ## 📦 Installazione
 
-1. Scarica l'ultimo `.jar` dalla sezione [Releases](https://github.com/tuousername/ShottyLobby/releases)
+1. Scarica l'ultimo `.jar` dalla sezione [Releases](https://github.com/24Shotty/ShottyLobby/releases)
 2. Posiziona il file nella cartella `plugins/` del tuo server
 3. Riavvia il server
 4. Configura il plugin modificando `plugins/ShottyLobby/config.yml`
@@ -213,7 +213,7 @@ Hai trovato un bug? [Apri una issue](https://github.com/24Shotty/ShottyLobby/iss
 
 ## 💡 Feature Request
 
-Hai un'idea per migliorare il plugin? [Suggeriscila qui](https://github.com/24ShottyShottyLobby/issues)
+Hai un'idea per migliorare il plugin? [Suggeriscila qui](https://github.com/24Shotty/ShottyLobby/issues)
 
 ## 👨‍💻 Sviluppatore
 

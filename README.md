@@ -209,19 +209,15 @@ custom-items:
 
 ## 🐛 Bug Report
 
-Hai trovato un bug? [Apri una issue](https://github.com/tuousername/ShottyLobby/issues)
+Hai trovato un bug? [Apri una issue](https://github.com/24Shotty/ShottyLobby/issues)
 
 ## 💡 Feature Request
 
-Hai un'idea per migliorare il plugin? [Suggeriscila qui](https://github.com/tuousername/ShottyLobby/issues)
+Hai un'idea per migliorare il plugin? [Suggeriscila qui](https://github.com/24ShottyShottyLobby/issues)
 
 ## 👨‍💻 Sviluppatore
 
 Sviluppato da **24Shotty Development Team**
-
-## 📄 Licenza
-
-Questo progetto è rilasciato sotto licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori dettagli.
 
 ---
 
